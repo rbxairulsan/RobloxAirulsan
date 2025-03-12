@@ -1,0 +1,204 @@
+/* 전체 페이지 배경 통일 */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #479e7a, #c49999); /* 헤더와 동일한 그라데이션 */
+    color: #333;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 제목 스타일 */
+.main-header h1 {
+    font-size: 3.5em; /* 제목 크기 유지 */
+    color: white; 
+    text-align: center; 
+    margin-bottom: 10px; /* 제목과 하단 텍스트 사이 간격 좁힘 */
+    line-height: 1.2; /* 줄 간격 유지 */
+}
+
+/* 하단 텍스트 스타일 */
+.main-header h2 {
+    font-size: 1.2em; /* 하단 텍스트 크기 */
+    color: white;
+    text-align: center;
+    margin-top: 5px; /* 상단 여백 최소화 */
+    line-height: 1.4; /* 줄 간격 조정 */
+}
+
+
+/* 제목 부모 요소 중앙 배치 */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* 헤더 높이 설정 */
+}
+
+.cta-button {
+    background: #ffc107;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ff9800;
+    transform: translateY(-3px);
+}
+
+/* 주요 기사 스타일 */
+.highlight-news {
+    display: flex;
+    align-items: center;
+    background: white;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.main-article img {
+    width: 50%;
+}
+
+.main-article-text {
+    padding: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    background: #4caf50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background: #45a049;
+}
+
+/* 뉴스 그리드 */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* 뉴스 게시물 정사각형 스타일 */
+.news-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* 고정된 너비 */
+    height: 300px; /* 고정된 높이 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: scale(1.05); /* 확대 효과 */
+}
+
+/* 이미지 스타일 */
+.news-item img {
+    width: 100%; /* 너비를 게시물에 맞춤 */
+    height: 150px; /* 높이를 절반으로 설정 */
+    object-fit: cover; /* 이미지가 정사각형 안에 자연스럽게 맞도록 */
+}
+
+/* 제목 스타일 */
+.news-item h3 {
+    font-size: 1.2em; /* 상대적으로 작은 제목 크기 */
+    margin: 10px 5px;
+    text-align: center;
+}
+
+/* 본론 스타일 */
+.news-item p {
+    font-size: 0.7em; /* 작은 글씨 크기 */
+    color: #555;
+    text-align: center; /* 중앙 정렬 */
+    padding: 0 10px;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+/* 날짜 스타일 */
+.news-item .date {
+    font-size: 0.6em; /* 더 작은 글씨 크기 */
+    color: #888;
+    text-align: right;
+    margin: 0 10px 5px;
+}
+
+/* 네비게이션 바 스타일 */
+nav {
+    position: absolute;
+    top: 30%;
+    left: 38.7%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    border-radius: 0 0 0 15px;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #1e90ff;
+    color: #000;
+  }
+
+  /* 회색 네모칸 스타일 */
+.gray-box {
+    background-color: #e0e0e0; /* 연한 회색 배경 */
+    color: #333; /* 글자 색상 */
+    padding: 20px; /* 안쪽 여백 */
+    margin: 20px auto; /* 위아래 여백 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    border-radius: 8px; /* 둥근 모서리 */
+    max-width: 800px; /* 너비 제한 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
+}
+
