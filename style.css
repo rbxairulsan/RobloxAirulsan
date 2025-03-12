@@ -1,0 +1,104 @@
+/* 전체 배경 및 기본 설정 */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #001f3f, #003566); /* 다크 블루 그라데이션 */
+  color: #ffffff;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 히어로 섹션 */
+.hero-section {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.main-title {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin: 10px 0 30px 0;
+  color: #cce7ff;
+}
+
+/* 버튼 스타일 */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #004080;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn.active {
+  background-color: #007bff;
+  font-weight: bold;
+  box-shadow: 0 0 10px #007bff;
+}
+
+/* 소셜 버튼 스타일 */
+.social-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-buttons a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-buttons a i {
+  font-size: 1.5rem;
+}
+
+.discord-link {
+  background-color: #5865f2;
+}
+
+.discord-link:hover {
+  background-color: #4752c4;
+  transform: translateY(-5px);
+}
+
+.youtube-link {
+  background-color: #ff0000;
+}
+
+.youtube-link:hover {
+  background-color: #cc0000;
+  transform: translateY(-5px);
+}
