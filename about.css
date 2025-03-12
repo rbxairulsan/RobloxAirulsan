@@ -1,0 +1,87 @@
+/* 공통 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* 네비게이션 바 스타일 */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 0 0 0 15px;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #1e90ff;
+  color: #000;
+}
+
+/* 배경 이미지 설정 */
+header {
+  height: 100vh;
+  background: url('배경사진1.png') no-repeat center center/cover;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+header .overlay {
+  background: rgba(0, 0, 0, 0.5); /* 어두운 오버레이 효과 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/* 섹션 스타일 */
+section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+}
