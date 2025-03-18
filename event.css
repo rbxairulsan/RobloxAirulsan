@@ -1,0 +1,30 @@
+/* 배경 그라데이션 설정 */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #9face6); /* 하늘색-보라색 그라데이션 */
+    font-family: Arial, sans-serif;
+}
+
+/* 링크를 가운데 정렬 */
+.center-container {
+    text-align: center;
+}
+
+.center-container a {
+    text-decoration: none;
+    color: white;
+    background-color: #4A90E2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.center-container a:hover {
+    background-color: #357ABD; /* 호버 시 더 어두운 파란색 */
+}
+
